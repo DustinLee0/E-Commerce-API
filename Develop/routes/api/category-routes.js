@@ -26,7 +26,7 @@ router.get('/:id', async (req, res) => {
 
     // Not found error message
     if (!categoryData) {
-      res.status(404).json({ message: 'No category with matching ID found in database.' });
+      res.status(404).json({ message: 'No category with matching ID in database.' });
       return;
     }
 
@@ -63,11 +63,11 @@ router.put('/:id', async (req, res) => {
       });
 
       if (!catUpdate) {
-        res.status(404).json({ message: 'No category with matching ID found in database.' });
+        res.status(404).json({ message: 'No category with matching ID in database.' });
         return;
       }
 
-      res.status(200).json({message: `Category with Id of ${req.params.id} updated`, catUpdate});
+      res.status(200).json({message: `Category with Id: ${req.params.id} updated`, catUpdate});
   } catch (err) {
     res.status(500).json(err);
   }
@@ -83,11 +83,11 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!catDelete) {
-      res.status(404).json({ message: 'No category with matching ID found in database.' });
+      res.status(404).json({ message: 'No category with matching ID in database.' });
       return;
     }
 
-    res.status(200).json({message: `Category with Id of ${req.params.id} deleted`, catDelete});
+    res.status(200).json({message: `Category with Id: ${req.params.id} deleted`, catDelete});
   } catch (err) {
     res.status(500).json(err);
   }
