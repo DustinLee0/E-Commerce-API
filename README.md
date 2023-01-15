@@ -1,7 +1,7 @@
 # 13 Object-Relational Mapping (ORM): E-Commerce Back End
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The task given was to build the back end of an e-commerce website. This is done by configuring a Rest API utilizing the [Sequelize](https://sequelize.org/docs/v6/getting-started/) library to store data and perform CRUD (create, read, update, delete) operations within the [mysql2](https://www.npmjs.com/package/mysql2) database.
+The task given was to build the back end of an e-commerce website. This is done by configuring a Rest API([Express](https://www.npmjs.com/package/express)) utilizing the [Sequelize](https://sequelize.org/docs/v6/getting-started/) library to store data and perform CRUD (create, read, update, delete) operations within the [mysql2](https://www.npmjs.com/package/mysql2) database.
 
 ## Installation 
 Dependencies:
@@ -20,9 +20,15 @@ To invoke the app navigate to the corresponding directory then run:
 ```
 node server.js
 ```
-This app is not deployed but here you will find a video demonstrating the usage of the app.
+This app is not deployed but here you will find a [walkthrough video](https://drive.google.com/file/d/1Ujuoc82JsN-ftr-OpfSrpZzUFPZiMoib/view) demonstrating the usage of the app.
 
 There are four models in the database. Category, Product, ProductTag and Tag. The application allows CRUD operations to be performed through the use of an API by hitting certain endpoints to access separate tables. 
+
+![serverStart](./Assets/serverStart.jpeg)
+![runSeeds](./Assets/runSeeds.jpeg)
+![categoryData](./Assets/categoryData.jpeg)
+![productData](./Assets/productData.jpeg)
+
 
 ## License
 This application is licensed under the [MIT License](https://opensource.org/licenses/MIT).
