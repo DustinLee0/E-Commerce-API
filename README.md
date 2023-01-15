@@ -1,4 +1,4 @@
-# 13 Object-Relational Mapping (ORM): E-Commerce Back End
+# E-Commerce API
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 The task given was to build the back end of an e-commerce website. This is done by configuring a Rest API([Express](https://www.npmjs.com/package/express)) utilizing the [Sequelize](https://sequelize.org/docs/v6/getting-started/) library to store data and perform CRUD (create, read, update, delete) operations within the [mysql2](https://www.npmjs.com/package/mysql2) database.
